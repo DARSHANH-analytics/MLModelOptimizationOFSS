@@ -1,0 +1,10 @@
+Harshit
+
+
+VS CODE : -> JUPYTER NOTEBOOK
+
+libraries:
+    i) pandas : data analysis
+    ii) Plotly express : visualize data
+    iii) sklearn (scikit-learn) : for machine learning
+    iv) hyperopt : tune hyperparameters
