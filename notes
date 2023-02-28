@@ -24,8 +24,71 @@ step 2:
 
 
 
-first example: one dataset, one model and one search space
+SOME NOTES oN STRATEGY AND BEST PRACTICES:
 
+    //a) how to define the search space? is it always choice or something else????
+            -there are different techniques to choose value (choice, qnormal, uniform, etc)
+            -Search space needs to be narrowed down based on our understanding/expertise on the algorithm
+            -search space parameters are dependent on the algorithm
+
+    //b) how do i select candidate algorithms?
+
+            - on the basis of features
+            - based on linear separation capability (visualize and find category that shows MORE PROMISE FIRST!)
+            - Some pointers (SUGGESTIONS)
+                    a) Choose decision tree when most features are categorical
+                    b) If data is complex and most rows have similar values (look at box plots and identify columns for which box width is small), choose SVM or an ensemble model (Random forest, Boosted trees, etc)
+                    c) Use logistic regression in cases where data is majorly real-value based features & we have a restriction on time for model training
+                    d) IF NOTHING ELSE PANS OUT OR NO LEADS COME THROUGH, GO WITH XGBOOST MODELS!
+
+
+            
+    //c) does the same features work for all algorithms or do we need features according to model algorithm?
+            NO: NOT EVERY MODEL WORKS WITHE EVERY TYPE OF DATA. PLEASE REFER TO DOCUMENTATION AND PREPROCESS DATA ACCORDINGLY!
+
+    //d) SYNTACTICALLY, how do you write a multi-model hyperopt code?
+    //e) what is the best strategy to organize the code?
+
+
+
+//f) what are strategies for early stopping?
+            # how to stop early?
+            FIRST STRATEGY: IF THERE IS NO IMPROVEMENT FOR N successive trials, stop!
+            SECOND STRATEGY : STOP WHEN IMPROVEMENT IS BELOW EXPECTATIONS!
+                        IT IS COMBINED WITH FIRST STRATEGY
+            ### only specifiying iteration count:
+                stop before max evals if AFTER REFERRING TO N previous iterations, I don't see any improvement
+            ### iteration stop count percent increase
+                stop before max evals IF AFTER REFERRING TO N PREVIOUS ITERATIONS, I don't see at least A CERTAIN PERCENTAGE OF IMPROVEMENT
 
 
 last example: one dataset, multiple models with different search spaces
+
+
+
+CHALLENGES!!
+a)library syntax (how functionalities need to be utilized)
+    -> read the documentation every time the functionality has to be called
+    -> please refer to the sample notebooks
+    -> PRACTICE FREQUENTLY
+
+b) python grammar: hands-on practice on python fundamentals
+
+    a) create a list of values 1 to 10
+        ans: list comprehension: [  value for value in range(1,11)  ]
+            range: list( range(1,11)   )
+            append:
+                    data=[]
+                    for value in range(1,11):
+                        data.append(value)
+
+c) understanding of algorithms & their parameters
+per algorithm learning time
+
+        i) initial understanding : 2 days
+        ii) pros and cons of the algorithms : 1 week
+        iii) hyperparameters and their effect : 1 week
+
+        - LEARN FROM MULTIPLE SOURCES (youtube, linkedIn courses, etc)
+        - REFER TO A GREAT BOOK!!!
+        - DOCUMENTATION HELPS!

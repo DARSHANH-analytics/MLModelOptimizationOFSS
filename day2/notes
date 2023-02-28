@@ -1,0 +1,56 @@
+Age  Income  MaritalStatus             STATUS
+< 30  < 100000       MARRIED            YES
+>30   > 100000       UNMARRIED          NO
+
+
+3 individuals/perspective:
+        a) layman
+        b) visual
+        c) statistical
+
+Hyperparameters for decision Tree
+
+Assumption : 10 categorical featues i.e MAXIMUM DEPTH is : 10
+
+WHAT CAN GO WRONG?
+            a) Model cannot make a decision
+            b) Model makes the decision but uses a lot of features (depth of the tree is too much)
+
+Strategy : How can I control the depth of the tree and cut the tree at the right point?
+
+Effect: By increasing depth, more accuracy will be achieved but overfitting will be observed
+    a) max_depth : directly set the size (level) for the tree
+                    3-7 is a good range to start with!
+                //OR
+    b) minimum_impurity_decrease : hp.uniform( 0.05, 0.2)
+
+    c) maximum_feature : how many features can be used for one decision?
+                usual values should be either
+                            a) half of total features (starting point)
+                            b) sqrt of available features (try if half doesn't work)
+                            c) log to the base 2 of available features (moderate-to-large datasets)
+
+
+
+Decision Trees
+        -Treats inputs as CATEGORICAL DATA
+
+Logistic Regression
+        -Treats inputs as REAL VALUE DATA
+
+Linear Regression
+        - Treats inputs as REAL-VALUE DATA
+
+SVM (SVC)
+        - Treats inputs as REAL-VALUE DATA
+
+KMeans
+        - Treats inputs as REAL-VALUE DATA
+
+Random Forest
+        -Treats inputs as CATEGORICAL DATA
+
+XGBoosted Trees
+        -Treats inputs as CATEGORICAL DATA
+Naive Bayes
+    -Treats inputs as CATEGORICAL DATA
