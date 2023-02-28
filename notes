@@ -8,3 +8,24 @@ libraries:
     ii) Plotly express : visualize data
     iii) sklearn (scikit-learn) : for machine learning
     iv) hyperopt : tune hyperparameters
+
+questions to be asked??
+
+
+1) WHAT IS MY OBJECTIVE?
+2) IS MY PROBLEM SUPERVISED OR UNSUPERVISED?
+3) HAVE I PERFORMED THE RIGHT EXPLORATION/PRE-PROCESSING?
+4) CAN I RUN MY DATA THROUGH MULTIPLE CANDIDATE ALGORITHMS?
+5) HOW CAN I EVALUATE MY MODEL?
+
+
+step 2: 
+
+
+
+
+first example: one dataset, one model and one search space
+
+
+
+last example: one dataset, multiple models with different search spaces
