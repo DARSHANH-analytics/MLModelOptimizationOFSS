@@ -11,8 +11,23 @@ i) KERNEL : linear[point, line, plane] or non-linear[poly,rbf]
 ii) gamma : forces data to be fitted more if gamma value is high
             *high values of gamma can cause overfitting!!!
 
-iii) degree : fit poly line on your data by changing the degree of the equation. You can try values between range 2 to 5 usually
+
+
         ## High degree leads to more training times
 
 iv) C : HOW SIGNIFICANTLY WOULD WE PENALIZE THE MODEL IF IT MAKES A MISTAKE DURING TRAINING?
         With increasing C, chances of overfitting increases!
+
+
+
+
+
+
+Objective: Identify the best algorithm along with correct hyperparameters to detect fraudulent transactions
+
+    - Continue with imblearn examples
+    - What f1 score for the did you find with hyperopt??
+    - arrangement
+
+
+    harshitshukla36@outlook.com

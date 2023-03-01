@@ -42,3 +42,18 @@ Sequence
 *step 5 & 6 can be clubbed into a function with logic being repeated for multiple models
 
 7) HYPEROPT TUNING !!!!!!!!
+
+
+
+
+L1 norm or L1 regularization or Lasso regression:
+
+        -whatever feature is unimportant, its impact on the model will be reduced to zero
+        -If I use L1 penalty, unimportant will be removed from model's output
+
+L2 norm or L2 regularization or Ridge regression:
+        reduce the weightage of unnecessary features from the outcome equation
+
+
+imbalanced : f1 score
+balanced : accuracy
