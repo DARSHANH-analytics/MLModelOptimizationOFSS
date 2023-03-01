@@ -1,0 +1,17 @@
+#objective: classify credit card transactions
+
+### THE ORIGINAL DATA IS IMBALANCED
+### SMOTE from imblearn
+
+
+# Notes
+
+    # 1) PCA (dimensionality reduction)
+    # 2) we can't the original data for great results.
+            # train the model on synthetically enhanced dataset
+            # test the model on original values
+    # 3) we can use hyperopt to try different models or hyperparameters values for one algorithm!
+
+
+
+
