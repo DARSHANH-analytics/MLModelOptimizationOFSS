@@ -1,0 +1,25 @@
+there are 2 sections of the project
+
+
+1) Model creation and tuning part
+
+
+2) Mapping the model binary object to REST API endpoint
+
+
+
+
+
+
+USER:
+
+check whether a loan application is to be accepted or rejected
+
+1) Go to a website where our service is available (URL or IP address)
+2) EITHER BY USING AN INTERFACE OR BY UPLOADING DATA, user will provide features 
+of new customers (X_test)
+3) submit the input
+4) model will receive this input through an API end-point*
+5) Model will make a prediction and generate an answer for each input
+6) the answers will be converted into a JSON form and rendered on the UI using 
+the user Interface!

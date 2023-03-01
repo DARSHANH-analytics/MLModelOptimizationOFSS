@@ -27,7 +27,20 @@ Objective: Identify the best algorithm along with correct hyperparameters to det
 
     - Continue with imblearn examples
     - What f1 score for the did you find with hyperopt??
-    - arrangement
+    - arrangement of code should be focussed on
 
 
     harshitshukla36@outlook.com
+
+
+
+model1 :   combination1
+           combination2
+           combination3
+
+
+trial1: model1, combination1
+trial2 : model4, combination3
+trial3: model4, combination1
+trial4: model2, combination2 
+
