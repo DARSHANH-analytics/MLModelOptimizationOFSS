@@ -1,0 +1,18 @@
+Explaination of effects of hyperparameters
+
+
+i) KERNEL : linear[point, line, plane] or non-linear[poly,rbf]
+
+        If data shows clear separation linearly for available features,
+        use linear kernel OTHER WISE use non-linear kernel
+
+        *Note: rbf should be default and don't switch kernels unless the effect of polynomial is determined
+
+ii) gamma : forces data to be fitted more if gamma value is high
+            *high values of gamma can cause overfitting!!!
+
+iii) degree : fit poly line on your data by changing the degree of the equation. You can try values between range 2 to 5 usually
+        ## High degree leads to more training times
+
+iv) C : HOW SIGNIFICANTLY WOULD WE PENALIZE THE MODEL IF IT MAKES A MISTAKE DURING TRAINING?
+        With increasing C, chances of overfitting increases!

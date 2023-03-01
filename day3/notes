@@ -15,3 +15,30 @@
 
 
 
+
+
+
+
+Sequence
+
+
+1)Loading the original
+2)Preprocessing : scaling one column & reducing dimensions
+[   features, target  ]<----------original dataset
+
+3) TO check model's performance on imbalanced data (original data)
+        -dtree_model, logit_model, svc_model
+        [Can we improve f1-score if I use SMOTE?]
+
+4) create oversample dataset using imblean library
+        [X_sm, y_sm]<------------enhanced dataset(where synthetic points were added to fraud category [minority class lablled 1])
+        [X, Y]<-------------original features & target
+
+5) Train the model on the enhanced dataset [X_sm, y_sm]
+
+6) Test the model on the original dataset [X & Y] 
+
+
+*step 5 & 6 can be clubbed into a function with logic being repeated for multiple models
+
+7) HYPEROPT TUNING !!!!!!!!
